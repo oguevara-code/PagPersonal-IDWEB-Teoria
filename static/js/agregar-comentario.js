@@ -33,7 +33,7 @@ function enviarComentario(event) {
 
         // Redirige después de 1 segundo
         setTimeout(() => {
-            window.location.href = "/comentarios-page";
+            window.location.href = "/comentarios";
         }, 1000);
     })
     .catch(error => {

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Pide los comentarios al backend
 function cargarComentarios() {
-    fetch("/comentarios")
+    fetch("/api/comentarios")
         .then(response => response.json())
         .then(data => mostrarComentarios(data))
         .catch(error => {
