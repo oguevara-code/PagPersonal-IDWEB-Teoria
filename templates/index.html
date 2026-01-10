@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Guevara: Inicio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
@@ -22,33 +22,33 @@
         <details>
             <summary>Mis estudios</summary>
             <ul>
-                <li><a href="estudios.html#inicial">Inicial</a></li>
-                <li><a href="estudios.html#primaria">Primaria</a></li>
-                <li><a href="estudios.html#secundaria">Secundaria</a></li>
-                <li><a href="estudios.html#universidad">Universidad</a></li>
+                <li><a href="{{ url_for('estudios_page') }}#inicial">Inicial</a></li>
+                <li><a href="{{ url_for('estudios_page') }}#primaria">Primaria</a></li>
+                <li><a href="{{ url_for('estudios_page') }}#secundaria">Secundaria</a></li>
+                <li><a href="{{ url_for('estudios_page') }}#universidad">Universidad</a></li>
             </ul>
         </details>
         <details>
             <summary>Mis hobbies</summary></a>
             <ul>
-                <li><a href="hobbies.html#deportes">Deportes</a></li>
-                <li><a href="hobbies.html#musica">Música</a></li>
-                <li><a href="hobbies.html#juegos">Videojuegos</a></li>
-                <li><a href="hobbies.html#danza">Danzas Folclóricas</a></li>
+                <li><a href="{{ url_for('hobbies_page') }}#deportes">Deportes</a></li>
+                <li><a href="{{ url_for('hobbies_page') }}#musica">Música</a></li>
+                <li><a href="{{ url_for('hobbies_page') }}#juegos">Videojuegos</a></li>
+                <li><a href="{{ url_for('hobbies_page') }}#danza">Danzas Folclóricas</a></li>
             </ul>
         </details>
         <details>
             <summary>Metas personales</summary>
             <ul>
-                <li><a href="metas.html#corto">A corto plazo</a></li>
-                <li><a href="metas.html#largo">A largo plazo</a></li>
+                <li><a href="{{ url_for('metas_page') }}#corto">A corto plazo</a></li>
+                <li><a href="{{ url_for('metas_page') }}#largo">A largo plazo</a></li>
             </ul>
         </details>
         <details>
             <summary>Comentarios</summary>
             <ul>
-                <li><a href="comentarios.html">Ver comentarios</a></li>
-                <li><a href="agregar-comentario.html">Agregar comentario</a></li>
+                <li><a href="{{ url_for('comentarios_page') }}">Ver comentarios</a></li>
+                <li><a href="{{ url_for('agregar-comentario_page') }}">Agregar comentario</a></li>
             </ul>
         </details>
         <details>
@@ -93,16 +93,16 @@
         
         <h2 id="redes">Redes sociales:</p></h2>
         <a href="https://www.instagram.com/omar.guevara.26?igsh=cWJ3c3hzdDRjbGdm" target="_blank">
-            <img src="imagenes/logo-insta.png"
+            <img src="{{ url_for('static', filename='img/logo-insta.png') }}"
                 width="40">Instagram</a></li>
         <a href="https://www.facebook.com/omar.andree.guvara.aliaga" target="_blank">
-            <img src="imagenes/logo-facebook.png"
+            <img src="{{ url_for('static', filename='img/logo-facebook.png') }}"
                 width="40">Facebook</a></li>
         <a href="https://w.app/sbaq87" target="_blank">
-            <img src="imagenes/logo-whats.png"
+            <img src="{{ url_for('static', filename='img/logo-whats.png') }}"
                 width="40">WhatsApp</a></li>        
         <a href="https://github.com/oguevara-code" target="_blank">
-            <img src="imagenes/logo-github.png"
+            <img src="{{ url_for('static', filename='img/logo-github.png') }}"
                 width="40">GitHub</a></li>   
     </footer>
 </body>

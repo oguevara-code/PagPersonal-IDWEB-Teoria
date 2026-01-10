@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Guevara: Hobbies</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             <li><a href="#juegos">Videojuegos</a></li>
             <li><a href="#danza">Danzas Folclóricas</a></li>
             <br>
-            <li><a href="index.html">Volver a inicio</a></li>
+            <li><a href="{{ url_for('index_page') }}">Volver a inicio</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -37,7 +37,7 @@
                     pero sigo teniendo ese cariño al deporte.
                 </p>
                 <div class="centrar">
-                <img src="imagenes/natacion.webp" 
+                <img src="{{ url_for('static', filename='img/natacion.webp') }}"
                 alt="natacion" width="500">
                 </div>
             
@@ -50,7 +50,7 @@
                     que voy a tener guardado siempre.
                 </p>
                 <div class="centrar">
-                <img src="imagenes/basquet.jpeg" 
+                <img src="{{ url_for('static', filename='img/basquet.jpeg') }}" 
                 alt="basquetball" width="500">
                 </div>
             </li>
@@ -60,7 +60,7 @@
                     viajar con mi bicicleta, como ir a yura, chivay o hasta Chapi.
                 </p>
                 <div class="centrar">
-                <img src="imagenes/ciclismo.webp" 
+                <img src="{{ url_for('static', filename='img/ciclismo.webp') }}" 
                 alt="ciclismo" width="500">
                 </div>
             </li>
@@ -74,7 +74,7 @@
                 Algunas de mis bandas y artistas favoritos son Romero Santos, Gustavo Cerati y Xdinero.  
                 La música me ayuda a concentrarme cuando estudio y también a relajarme después de un día largo.</p>
                 <div class="centrar">
-                <img src="imagenes/generos.jpg" 
+                <img src="{{ url_for('static', filename='img/generos.jpg') }}" 
                 alt="generos de musica" width="500">
                 </div>
 
@@ -82,7 +82,7 @@
                 tocando solos de guitarra, ya que me tranquiliza y me hace sentir que soy muy bueno. 
                 Para mí, la música es lo mejor que puede existir.</p>
                 <div class="centrar">
-                <img src="imagenes/guitarrista.webp" 
+                <img src="{{ url_for('static', filename='img/guitarrista.webp') }}" 
                 alt="guitarrista" width="350">
                 </div>
             
@@ -91,7 +91,7 @@
                 por diversión, sino también porque me gusta la forma en que te hacen pensar y reaccionar rápido.  
                 Suelo jugar con mis amigos online y a veces también solo, cuando quiero relajarme o distraerme un poco.</p>
                 <div class="centrar">
-                <img src="imagenes/videojuegos.jpg" 
+                <img src="{{ url_for('static', filename='img/videojuegos.jpg') }}" 
                 alt="videojuegos" width="450">
                 </div>
 
@@ -101,7 +101,7 @@
                 También me interesa el desarrollo de videojuegos, ya que combina programación, diseño y creatividad, 
                 cosas que me apasionan.</p>
                 <div class="centrar">
-                <img src="imagenes/tipos.jpg" 
+                <img src="{{ url_for('static', filename='img/tipos.jpg') }}" 
                 alt="videojuego" width="500">
                 </div>
             
@@ -114,7 +114,7 @@
                     de participar en algunas presentaciones, y aunque el traje es pesado, la emoción de bailar y representar 
                     parte de nuestra cultura lo vale totalmente.</p>
                     <div class="centrar">
-                    <img src="imagenes/morenada.jpg" 
+                    <img src="{{ url_for('static', filename='img/morenada.jpg') }}" 
                     alt="morenada" width="400">
                     </div>
                 </li>
@@ -124,7 +124,7 @@
                     y la fuerza que transmite cada movimiento. Participar en un grupo de caporales fue una experiencia muy divertida, 
                     porque se siente la unión, el ritmo y el orgullo de mostrar nuestras raíces.</p>
                     <div class="centrar">
-                    <img src="imagenes/caporales.jpg" 
+                    <img src="{{ url_for('static', filename='img/caporales.jpg') }}" 
                     alt="caporales" 
                     width="400">
                     </div>
@@ -135,7 +135,7 @@
                     energía, y me parece impresionante cómo se combinan los colores vivos de los trajes con los pasos rápidos 
                     y precisos. He visto varias presentaciones en festivales y siempre me transmiten mucha emoción.</p>
                     <div class="centrar">
-                    <img src="imagenes/tinkus.jpg" 
+                    <img src="{{ url_for('static', filename='img/tinkus.jpg') }}" 
                     alt="tinkus" width="400">
                     </div>
                 </li>
@@ -146,7 +146,7 @@
                     cómo los bailarines logran combinar la fuerza del personaje con pasos tan coordinados.  
                     Es una danza que representa muy bien la riqueza cultural de los Andes.</p>
                     <div class="centrar">
-                    <img src="imagenes/diablada.jpg" 
+                    <img src="{{ url_for('static', filename='img/diablada.jpg') }}" 
                     alt="diablad" width="400">
                     </div>
                 </li>
@@ -159,16 +159,16 @@
         
         <h2 id="redes">Redes sociales:</p></h2>
         <a href="https://www.instagram.com/omar.guevara.26?igsh=cWJ3c3hzdDRjbGdm" target="_blank">
-            <img src="imagenes/logo-insta.png"
+            <img src="{{ url_for('static', filename='img/logo-insta.png') }}"
                 width="40">Instagram</a></li>
         <a href="https://www.facebook.com/omar.andree.guvara.aliaga" target="_blank">
-            <img src="imagenes/logo-facebook.png"
+            <img src="{{ url_for('static', filename='img/logo-facebook.png') }}"
                 width="40">Facebook</a></li>
         <a href="https://w.app/sbaq87" target="_blank">
-            <img src="imagenes/logo-whats.png"
+            <img src="{{ url_for('static', filename='img/logo-whats.png') }}"
                 width="40">WhatsApp</a></li>        
         <a href="https://github.com/oguevara-code" target="_blank">
-            <img src="imagenes/logo-github.png"
+            <img src="{{ url_for('static', filename='img/logo-github.png') }}"
                 width="40">GitHub</a></li>   
     </footer>
 </body>

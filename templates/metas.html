@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Guevara: Metas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
             <li><a href="#corto">A corto plazo</a></li>
             <li><a href="#largo">A largo plazo</a></li>
             <br>
-            <li><a href="index.html">Volver a inicio</a></li>
+            <li><a href="{{ url_for('index_page') }}">Volver a inicio</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -51,16 +51,16 @@
         
         <h2 id="redes">Redes sociales:</p></h2>
         <a href="https://www.instagram.com/omar.guevara.26?igsh=cWJ3c3hzdDRjbGdm" target="_blank">
-            <img src="imagenes/logo-insta.png"
+            <img src="{{ url_for('static', filename='img/logo-insta.png') }}"
                 width="40">Instagram</a></li>
         <a href="https://www.facebook.com/omar.andree.guvara.aliaga" target="_blank">
-            <img src="imagenes/logo-facebook.png"
+            <img src="{{ url_for('static', filename='img/logo-facebook.png') }}"
                 width="40">Facebook</a></li>
         <a href="https://w.app/sbaq87" target="_blank">
-            <img src="imagenes/logo-whats.png"
+            <img src="{{ url_for('static', filename='img/logo-whats.png') }}"
                 width="40">WhatsApp</a></li>        
         <a href="https://github.com/oguevara-code" target="_blank">
-            <img src="imagenes/logo-github.png"
+            <img src="{{ url_for('static', filename='img/logo-github.png') }}"
                 width="40">GitHub</a></li>   
     </footer>
 </body>

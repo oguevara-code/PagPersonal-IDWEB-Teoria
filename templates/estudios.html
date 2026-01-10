@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Guevara: Estudios</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             <li><a href="#secundaria">Educación Secundaria</a></li>
             <li><a href="#universidad">Educación Superior</a></li>
             <br>
-            <li><a href="index.html">Volver a inicio</a></li>
+            <li><a href="{{ url_for('index_page') }}">Volver a inicio</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -30,7 +30,7 @@
             muy divertida, llena de juegos, canciones y amigos nuevos. Allí 
             aprendí valores importantes como el respeto y la cooperación.</p>
         <div class="centrar">
-        <img src="imagenes/smp1.jpg" 
+        <img src="{{ url_for('static', filename='img/smp1.jpg') }}" 
         alt="Colegio San Martin de Porres" width="500">
         </div>
 
@@ -40,7 +40,7 @@
             cualquier niño, no me me gustaba estudiar, no era el mejor alumno y 
             tampoco el peor</p>
         <div class="centrar">
-        <img src="imagenes/smp2.jpg" 
+        <img src="{{ url_for('static', filename='img/smp2.jpg') }}" 
         alt="Colegio San Martin de Porres" width="400">
         </div>
 
@@ -54,7 +54,8 @@
             en mi curso favorito junto con educación para el trabajo.
         </p>
         <div class="centrar">
-        <img src="imagenes/smp3.jpg" alt="Colegio San Martin de Porres" width="500">
+        <img src="{{ url_for('static', filename='img/smp3.jpg') }}" 
+        alt="Colegio San Martin de Porres" width="500">
         </div>
         
         <h2 id="universidad">Educación Superior</h2>
@@ -65,7 +66,7 @@
             cuando estaba postulando para ingresar a la universidad.
         </p>
         <div class="centrar">
-        <img src="imagenes/UNSA.png" alt="UNSA" width="600">
+        <img src="{{ url_for('static', filename='img/UNSA.png') }}" alt="UNSA" width="600">
         </div>
         <br>
     </main>
@@ -76,16 +77,16 @@
         
         <h2 id="redes">Redes sociales:</p></h2>
         <a href="https://www.instagram.com/omar.guevara.26?igsh=cWJ3c3hzdDRjbGdm" target="_blank">
-            <img src="imagenes/logo-insta.png"
+            <img src="{{ url_for('static', filename='img/logo-insta.png') }}"
                 width="40">Instagram</a></li>
         <a href="https://www.facebook.com/omar.andree.guvara.aliaga" target="_blank">
-            <img src="imagenes/logo-facebook.png"
+            <img src="{{ url_for('static', filename='img/logo-facebook.png') }}"
                 width="40">Facebook</a></li>
         <a href="https://w.app/sbaq87" target="_blank">
-            <img src="imagenes/logo-whats.png"
+            <img src="{{ url_for('static', filename='img/logo-whats.png') }}"
                 width="40">WhatsApp</a></li>        
         <a href="https://github.com/oguevara-code" target="_blank">
-            <img src="imagenes/logo-github.png"
+            <img src="{{ url_for('static', filename='img/logo-github.png') }}"
                 width="40">GitHub</a></li>   
     </footer>
 </body>
